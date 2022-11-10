@@ -74,15 +74,27 @@
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  /* border: 1px solid #eaeaea; */
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
+  border-color: #0070f3;
+  border-width: 5px;
+}
+.card img {
+  width: 100px;
+}
+
+#cards-section {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card:hover,
@@ -106,6 +118,17 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.main section {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.submitForm {
+  display: flex;
+  flex-direction: column;
+  background-color: #121212;
 }
 
 @media (max-width: 600px) {
