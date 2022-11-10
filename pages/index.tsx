@@ -57,7 +57,7 @@ export default function Home () {
 
         <section id='cards-section'>
           {cards.map((card, i) => (
-            <div className='card' key={i}>
+            <div className={styles.card} key={i}>
               <img src={card.imageUrl} />
               <h1>{card.name}</h1>
             </div>
